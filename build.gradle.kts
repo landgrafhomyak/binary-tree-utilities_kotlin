@@ -1,8 +1,9 @@
 plugins {
     kotlin("multiplatform") version "1.9.0"
+    `maven-publish`
 }
 
-group = "ru.landgrafhomyak.utility"
+group = "ru.landgrafhomyak.utility.collections"
 version = "1.0"
 
 repositories {

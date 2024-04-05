@@ -1,11 +1,8 @@
-@file:JvmName("BinaryTreeUtilitiesKt")
-
-package ru.landgrafhomyak.utility
+package ru.landgrafhomyak.utility.collections
 
 import kotlin.contracts.ExperimentalContracts
 import kotlin.contracts.InvocationKind
 import kotlin.contracts.contract
-import kotlin.jvm.JvmName
 import kotlin.jvm.JvmStatic
 
 @Suppress("FunctionName")
