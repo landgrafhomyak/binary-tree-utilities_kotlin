@@ -10,24 +10,43 @@ import kotlin.jvm.JvmStatic
 
 @Suppress("FunctionName")
 object BinaryTreeUtilities {
+    /**
+     * Contains builders for swap operations in linked binary tree structures.
+     *
+     * @see BinaryTreeUtilities.Swap.swapDistant
+     * @see BinaryTreeUtilities.Swap.swapNeighbours
+     */
     object Swap {
         @JvmStatic
         @OptIn(ExperimentalContracts::class)
         @PublishedApi
-        internal inline fun <NODE : Any> NODE?.setParentNullable(
+        internal inline fun <NODE : Any> NODE?._setParentNullable(
             parent: NODE?,
             setter: (node: NODE, newParent: NODE?) -> Unit
         ) {
             contract {
                 callsInPlace(setter, InvocationKind.AT_MOST_ONCE)
             }
-            if (this@setParentNullable != null)
-                setter(this@setParentNullable, parent)
+            if (this@_setParentNullable != null)
+                setter(this@_setParentNullable, parent)
         }
 
+        /**
+         * Swap variant when [child] is left or right child of [parent].
+         *
+         * @param grandparent parent of [parent].
+         * @param setGrandparent2Parent function for setting new child of [grandparent]. Will be called exactly once,
+         * so determination what child [parent] is can be done inside it.
+         *
+         * @param setParent operator for setting parent of specified node.
+         * @param getForwardChild operator for getting child of a same direction as [parent]->[child].
+         * @param setForwardChild operator for setting child of a same direction as [parent]->[child].
+         * @param getOppositeChild operator for getting child from an opposite direction to [parent]->[child].
+         * @param setOppositeChild operator for setting child from an opposite direction to [parent]->[child].
+         */
         @JvmStatic
         @OptIn(ExperimentalContracts::class)
-        inline fun <NODE : Any> _swap_ParentChild(
+        inline fun <NODE : Any> swapNeighbours(
             parent: NODE, child: NODE,
             grandparent: NODE?,
             setGrandparent2Parent: (node: NODE) -> Unit,
@@ -54,16 +73,34 @@ object BinaryTreeUtilities {
             setOppositeChild(parent, getOppositeChild(child))
             setOppositeChild(child, oppositeChild)
 
-            getOppositeChild(child).setParentNullable(child, setParent)
-            getOppositeChild(parent).setParentNullable(parent, setParent)
-            getForwardChild(child).setParentNullable(parent, setParent)
+            getOppositeChild(child)._setParentNullable(child, setParent)
+            getOppositeChild(parent)._setParentNullable(parent, setParent)
+            getForwardChild(child)._setParentNullable(parent, setParent)
             setForwardChild(child, parent)
             setParent(parent, child)
         }
 
+        /**
+         * Swap variant when [node1] is ***NOT*** left or right child of [node2] and vice versa.
+         *
+         * This function is symmetric, so 'left' and 'right' operators can be swapped.
+         *
+         * @param node1parent parent of [node1].
+         * @param node2parent parent of [node2].
+         * @param setParent2Node1 function for setting new child of [node1parent]. Will be called exactly once,
+         * so determination what child [node1parent] is can be done inside it.
+         * @param setParent2Node2 function for setting new child of [node2parent]. Will be called exactly once,
+         * so determination what child [node2parent] is can be done inside it.
+         *
+         * @param setParent operator for setting parent of specified node.
+         * @param getLeftChild operator for getting left child of specified node.
+         * @param setLeftChild operator for setting left child of specified node.
+         * @param getRightChild operator for getting right child of specified node.
+         * @param setRightChild operator for setting right child of specified node.
+         */
         @JvmStatic
         @OptIn(ExperimentalContracts::class)
-        inline fun <NODE : Any> _swap_Random(
+        inline fun <NODE : Any> swapDistant(
             node1: NODE, node2: NODE,
             node1parent: NODE?, node2parent: NODE?,
             setParent2Node1: (node: NODE) -> Unit,
@@ -93,16 +130,16 @@ object BinaryTreeUtilities {
             val leftChild2 = getLeftChild(node2)
             setLeftChild(node1, leftChild2)
             setLeftChild(node2, leftChild1)
-            leftChild1.setParentNullable(node2, setParent)
-            leftChild2.setParentNullable(node1, setParent)
+            leftChild1._setParentNullable(node2, setParent)
+            leftChild2._setParentNullable(node1, setParent)
 
 
             val rightChild1 = getRightChild(node1)
             val rightChild2 = getRightChild(node2)
             setRightChild(node1, rightChild2)
             setRightChild(node2, rightChild1)
-            rightChild1.setParentNullable(node2, setParent)
-            rightChild2.setParentNullable(node1, setParent)
+            rightChild1._setParentNullable(node2, setParent)
+            rightChild2._setParentNullable(node1, setParent)
         }
     }
 }
