@@ -1,0 +1,101 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../binary-tree-utilities/1.0/binary-tree-utilities-1.0.module",
+    "group": "ru.landgrafhomyak.collections",
+    "module": "binary-tree-utilities",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.7"
+    }
+  },
+  "variants": [
+    {
+      "name": "tvosArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "tvos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "binary-tree-utilities.klib",
+          "url": "binary-tree-utilities-tvosarm64-1.0.klib",
+          "size": 10423,
+          "sha512": "6f8895ae609dd1d8a173b18f543b69504867ccd01c6791201b9eca3a959d8d5a2c0a7d7d9cc01df545311450a1f3f73bda46fd2e04df7185aae926c09790b7b0",
+          "sha256": "3f593a12c93046e73dcdff87df49364d66239b82f154a51528355c43edffa29f",
+          "sha1": "c90c0877dba2f8aa4d35edadbb0af654c05b938b",
+          "md5": "ef1b47dd5dfaa01986d205e47bc354ff"
+        }
+      ]
+    },
+    {
+      "name": "tvosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "tvos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "binary-tree-utilities-tvosarm64-1.0-sources.jar",
+          "url": "binary-tree-utilities-tvosarm64-1.0-sources.jar",
+          "size": 2228,
+          "sha512": "31b21012b274b599760271ed62d4f66eaf1e581af0ba21334eb0e9a78f7d806d47c8ba4707618853cb8858f36683c5e92a69b50261f43dd7e1597edf39843f39",
+          "sha256": "dd64580b81ea07764dd1bf6f5e9d186c25c7cb3665f3f9484dc7d852c3990371",
+          "sha1": "db89f388cf550e6f80388ca936b568d05b279fa4",
+          "md5": "8503c6355f804ecc4eb69426b9ace284"
+        }
+      ]
+    },
+    {
+      "name": "tvosArm64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "tvos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "binary-tree-utilities-tvosarm64-1.0-metadata.jar",
+          "url": "binary-tree-utilities-tvosarm64-1.0-metadata.jar",
+          "size": 261,
+          "sha512": "56b5817dc2f0e28440c5b5cc7186b9440f73a89cf8594ce9f130a521725d8b7aa57f57849ac65ef7c7a8e776f32f39494640d4a619960188a98ca6b91493e1cb",
+          "sha256": "9db23fefab89083936c65a1c730eeed8f94484fda3629f55594b128fbfb03335",
+          "sha1": "48ace2b20607362c7f2496dc7bf161a893706b87",
+          "md5": "e7b852ea5416ad7f7fbe8e04d0c1118c"
+        }
+      ]
+    }
+  ]
+}

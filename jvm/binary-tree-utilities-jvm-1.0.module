@@ -1,0 +1,113 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../binary-tree-utilities/1.0/binary-tree-utilities-1.0.module",
+    "group": "ru.landgrafhomyak.collections",
+    "module": "binary-tree-utilities",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.7"
+    }
+  },
+  "variants": [
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "binary-tree-utilities-jvm-1.0.jar",
+          "url": "binary-tree-utilities-jvm-1.0.jar",
+          "size": 4266,
+          "sha512": "a7e8da1d204e5b209cd6c49dc1804823835fb7b2f77f2bc00a1fd5c058f2ac6c5dd3d43c38ace3385c464a0b1f7870fbbc9057149721d4cd88579bb0432c103b",
+          "sha256": "a324c71de4a51c45d6193ba39875fc77d1df37536d1a86c85bd0fbe595adcd9b",
+          "sha1": "77678c521c2235912befa2fcce46f6ef7ff7aa27",
+          "md5": "539766d7df218d01aee6f6f1c96d3069"
+        }
+      ]
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "binary-tree-utilities-jvm-1.0.jar",
+          "url": "binary-tree-utilities-jvm-1.0.jar",
+          "size": 4266,
+          "sha512": "a7e8da1d204e5b209cd6c49dc1804823835fb7b2f77f2bc00a1fd5c058f2ac6c5dd3d43c38ace3385c464a0b1f7870fbbc9057149721d4cd88579bb0432c103b",
+          "sha256": "a324c71de4a51c45d6193ba39875fc77d1df37536d1a86c85bd0fbe595adcd9b",
+          "sha1": "77678c521c2235912befa2fcce46f6ef7ff7aa27",
+          "md5": "539766d7df218d01aee6f6f1c96d3069"
+        }
+      ]
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "binary-tree-utilities-jvm-1.0-sources.jar",
+          "url": "binary-tree-utilities-jvm-1.0-sources.jar",
+          "size": 2228,
+          "sha512": "31b21012b274b599760271ed62d4f66eaf1e581af0ba21334eb0e9a78f7d806d47c8ba4707618853cb8858f36683c5e92a69b50261f43dd7e1597edf39843f39",
+          "sha256": "dd64580b81ea07764dd1bf6f5e9d186c25c7cb3665f3f9484dc7d852c3990371",
+          "sha1": "db89f388cf550e6f80388ca936b568d05b279fa4",
+          "md5": "8503c6355f804ecc4eb69426b9ace284"
+        }
+      ]
+    }
+  ]
+}

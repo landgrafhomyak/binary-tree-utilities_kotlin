@@ -1,0 +1,101 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../binary-tree-utilities/1.0/binary-tree-utilities-1.0.module",
+    "group": "ru.landgrafhomyak.collections",
+    "module": "binary-tree-utilities",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.7"
+    }
+  },
+  "variants": [
+    {
+      "name": "watchosArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "watchos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "binary-tree-utilities.klib",
+          "url": "binary-tree-utilities-watchosarm64-1.0.klib",
+          "size": 10449,
+          "sha512": "d0c9f355738493b1d7a41f407496162d5d1ac6d8863d0cc09c5cced2cb5c8645f096c5572ab854180a874d5200376009aaeedaad310d48d1340d9d9f60b0f45a",
+          "sha256": "1770539b35ab607fc70f0f1f7c69513dfeef54f8235541675e1ef52db58324bb",
+          "sha1": "6d0fad801a86c34d8adb1df3f6b4b2fa4f5b8553",
+          "md5": "545bd399b49fb555839e36dbb5f32b14"
+        }
+      ]
+    },
+    {
+      "name": "watchosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "watchos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "binary-tree-utilities-watchosarm64-1.0-sources.jar",
+          "url": "binary-tree-utilities-watchosarm64-1.0-sources.jar",
+          "size": 2228,
+          "sha512": "31b21012b274b599760271ed62d4f66eaf1e581af0ba21334eb0e9a78f7d806d47c8ba4707618853cb8858f36683c5e92a69b50261f43dd7e1597edf39843f39",
+          "sha256": "dd64580b81ea07764dd1bf6f5e9d186c25c7cb3665f3f9484dc7d852c3990371",
+          "sha1": "db89f388cf550e6f80388ca936b568d05b279fa4",
+          "md5": "8503c6355f804ecc4eb69426b9ace284"
+        }
+      ]
+    },
+    {
+      "name": "watchosArm64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "watchos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "binary-tree-utilities-watchosarm64-1.0-metadata.jar",
+          "url": "binary-tree-utilities-watchosarm64-1.0-metadata.jar",
+          "size": 261,
+          "sha512": "fb0674b53c4440bd270d241152c58f38ce85d4dbd29324cb6f6f88b1692633fb9475ae0c8d01fac81f1fd622bc7ed9bb9f60e4e07e402303fb916ca753386ce9",
+          "sha256": "e050e4bb218c2b6b29bda3c104bb55f64cb62d79686bd01ed96df85442d63af9",
+          "sha1": "f3ce542a675a1858006150f7ad276db1e3ab4b4b",
+          "md5": "e165a3aa091dc0cade38f6b69ee5d5a2"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../binary-tree-utilities/1.0/binary-tree-utilities-1.0.module",
+    "group": "ru.landgrafhomyak.collections",
+    "module": "binary-tree-utilities",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.7"
+    }
+  },
+  "variants": [
+    {
+      "name": "iosArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "binary-tree-utilities.klib",
+          "url": "binary-tree-utilities-iosarm64-1.0.klib",
+          "size": 10414,
+          "sha512": "755ba7498fa8d01e7154db19d81e9d8b0ec53775622b5f45dc89fee3e197e431cdf300889475d9a2ec8aaae2b7280ac9bcb2d9b6f2902e2c9db15f492d9ace51",
+          "sha256": "e79a25d2b28ecf3422539aaedc428fa4183ed4c743e565a57f8d68bd8d8fefdd",
+          "sha1": "3d599307484b9fc5b20aeacceb8bbe696bd07132",
+          "md5": "e0bb4e69811e45f0a26cd12d11528c46"
+        }
+      ]
+    },
+    {
+      "name": "iosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "binary-tree-utilities-iosarm64-1.0-sources.jar",
+          "url": "binary-tree-utilities-iosarm64-1.0-sources.jar",
+          "size": 2228,
+          "sha512": "31b21012b274b599760271ed62d4f66eaf1e581af0ba21334eb0e9a78f7d806d47c8ba4707618853cb8858f36683c5e92a69b50261f43dd7e1597edf39843f39",
+          "sha256": "dd64580b81ea07764dd1bf6f5e9d186c25c7cb3665f3f9484dc7d852c3990371",
+          "sha1": "db89f388cf550e6f80388ca936b568d05b279fa4",
+          "md5": "8503c6355f804ecc4eb69426b9ace284"
+        }
+      ]
+    },
+    {
+      "name": "iosArm64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "binary-tree-utilities-iosarm64-1.0-metadata.jar",
+          "url": "binary-tree-utilities-iosarm64-1.0-metadata.jar",
+          "size": 261,
+          "sha512": "a1f303897f1bbf97c53d1cae5c0a5e53753f074572f3fef5801bb545a6760a95b9d90c09c90f8423f52ce285ef09b1d8368333849c842aa1690dcfbd1e907a99",
+          "sha256": "1af27a6f6461877a1e168bd4cb36585e2dd6071f424afe65d8780453b46558f5",
+          "sha1": "6f4eb66a028babd7098d1ebf1501f7a7b0de8208",
+          "md5": "5c27b68892bffe39cf856433b15a64a3"
+        }
+      ]
+    }
+  ]
+}

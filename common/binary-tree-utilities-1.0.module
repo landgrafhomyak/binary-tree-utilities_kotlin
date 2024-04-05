@@ -1,0 +1,882 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "ru.landgrafhomyak.collections",
+    "module": "binary-tree-utilities",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.7"
+    }
+  },
+  "variants": [
+    {
+      "name": "metadataApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "binary-tree-utilities-metadata-1.0.jar",
+          "url": "binary-tree-utilities-1.0.jar",
+          "size": 4085,
+          "sha512": "4e15a03daf7f7da1fd3932ac12c425c8bfa80713e42457c3b060fa65e2633aaf3ee733cd6214383dfca89f5e9b2defcb42ef93c46fa980b4a612085dc7457a21",
+          "sha256": "2066895298247178363684ad681b135790a264fea59455476d74606da564ea5e",
+          "sha1": "2c2154d76f2f3ae9a9170984987e536a56cfcad3",
+          "md5": "e6da815906b40411ac1ab1f06f052a6d"
+        }
+      ]
+    },
+    {
+      "name": "metadataSourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "files": [
+        {
+          "name": "binary-tree-utilities-kotlin-1.0-sources.jar",
+          "url": "binary-tree-utilities-1.0-sources.jar",
+          "size": 2228,
+          "sha512": "31b21012b274b599760271ed62d4f66eaf1e581af0ba21334eb0e9a78f7d806d47c8ba4707618853cb8858f36683c5e92a69b50261f43dd7e1597edf39843f39",
+          "sha256": "dd64580b81ea07764dd1bf6f5e9d186c25c7cb3665f3f9484dc7d852c3990371",
+          "sha1": "db89f388cf550e6f80388ca936b568d05b279fa4",
+          "md5": "8503c6355f804ecc4eb69426b9ace284"
+        }
+      ]
+    },
+    {
+      "name": "androidNativeArm32ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "android_arm32",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-androidnativearm32/1.0/binary-tree-utilities-androidnativearm32-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-androidnativearm32",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "androidNativeArm32SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "android_arm32",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-androidnativearm32/1.0/binary-tree-utilities-androidnativearm32-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-androidnativearm32",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "androidNativeArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "android_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-androidnativearm64/1.0/binary-tree-utilities-androidnativearm64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-androidnativearm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "androidNativeArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "android_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-androidnativearm64/1.0/binary-tree-utilities-androidnativearm64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-androidnativearm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "androidNativeX64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "android_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-androidnativex64/1.0/binary-tree-utilities-androidnativex64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-androidnativex64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "androidNativeX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "android_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-androidnativex64/1.0/binary-tree-utilities-androidnativex64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-androidnativex64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "androidNativeX86ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "android_x86",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-androidnativex86/1.0/binary-tree-utilities-androidnativex86-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-androidnativex86",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "androidNativeX86SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "android_x86",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-androidnativex86/1.0/binary-tree-utilities-androidnativex86-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-androidnativex86",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "iosArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-iosarm64/1.0/binary-tree-utilities-iosarm64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-iosarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "iosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-iosarm64/1.0/binary-tree-utilities-iosarm64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-iosarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "iosArm64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-iosarm64/1.0/binary-tree-utilities-iosarm64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-iosarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-iossimulatorarm64/1.0/binary-tree-utilities-iossimulatorarm64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-iossimulatorarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-iossimulatorarm64/1.0/binary-tree-utilities-iossimulatorarm64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-iossimulatorarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-iossimulatorarm64/1.0/binary-tree-utilities-iossimulatorarm64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-iossimulatorarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "iosX64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-iosx64/1.0/binary-tree-utilities-iosx64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-iosx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "iosX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-iosx64/1.0/binary-tree-utilities-iosx64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-iosx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "iosX64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-iosx64/1.0/binary-tree-utilities-iosx64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-iosx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "jsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-js/1.0/binary-tree-utilities-js-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-js",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "jsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-js/1.0/binary-tree-utilities-js-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-js",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "jsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-js/1.0/binary-tree-utilities-js-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-js",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-jvm/1.0/binary-tree-utilities-jvm-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-jvm",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-jvm/1.0/binary-tree-utilities-jvm-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-jvm",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-jvm/1.0/binary-tree-utilities-jvm-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-jvm",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "linuxArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "linux_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-linuxarm64/1.0/binary-tree-utilities-linuxarm64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-linuxarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "linuxArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "linux_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-linuxarm64/1.0/binary-tree-utilities-linuxarm64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-linuxarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "linuxX64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "linux_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-linuxx64/1.0/binary-tree-utilities-linuxx64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-linuxx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "linuxX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "linux_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-linuxx64/1.0/binary-tree-utilities-linuxx64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-linuxx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "macosArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-macosarm64/1.0/binary-tree-utilities-macosarm64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-macosarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "macosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-macosarm64/1.0/binary-tree-utilities-macosarm64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-macosarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "macosArm64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-macosarm64/1.0/binary-tree-utilities-macosarm64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-macosarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "macosX64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "macos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-macosx64/1.0/binary-tree-utilities-macosx64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-macosx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "macosX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "macos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-macosx64/1.0/binary-tree-utilities-macosx64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-macosx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "macosX64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "macos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-macosx64/1.0/binary-tree-utilities-macosx64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-macosx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "mingwX64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "mingw_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-mingwx64/1.0/binary-tree-utilities-mingwx64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-mingwx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "mingwX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "mingw_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-mingwx64/1.0/binary-tree-utilities-mingwx64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-mingwx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "tvosArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "tvos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-tvosarm64/1.0/binary-tree-utilities-tvosarm64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-tvosarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "tvosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "tvos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-tvosarm64/1.0/binary-tree-utilities-tvosarm64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-tvosarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "tvosArm64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "tvos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-tvosarm64/1.0/binary-tree-utilities-tvosarm64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-tvosarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "tvosX64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "tvos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-tvosx64/1.0/binary-tree-utilities-tvosx64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-tvosx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "tvosX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "tvos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-tvosx64/1.0/binary-tree-utilities-tvosx64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-tvosx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "tvosX64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "tvos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-tvosx64/1.0/binary-tree-utilities-tvosx64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-tvosx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "watchosArm32ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "watchos_arm32",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-watchosarm32/1.0/binary-tree-utilities-watchosarm32-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-watchosarm32",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "watchosArm32SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "watchos_arm32",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-watchosarm32/1.0/binary-tree-utilities-watchosarm32-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-watchosarm32",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "watchosArm32MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "watchos_arm32",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-watchosarm32/1.0/binary-tree-utilities-watchosarm32-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-watchosarm32",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "watchosArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "watchos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-watchosarm64/1.0/binary-tree-utilities-watchosarm64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-watchosarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "watchosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "watchos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-watchosarm64/1.0/binary-tree-utilities-watchosarm64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-watchosarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "watchosArm64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "watchos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-watchosarm64/1.0/binary-tree-utilities-watchosarm64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-watchosarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "watchosX64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "watchos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-watchosx64/1.0/binary-tree-utilities-watchosx64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-watchosx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "watchosX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "watchos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-watchosx64/1.0/binary-tree-utilities-watchosx64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-watchosx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "watchosX64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "watchos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../binary-tree-utilities-watchosx64/1.0/binary-tree-utilities-watchosx64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "binary-tree-utilities-watchosx64",
+        "version": "1.0"
+      }
+    }
+  ]
+}
