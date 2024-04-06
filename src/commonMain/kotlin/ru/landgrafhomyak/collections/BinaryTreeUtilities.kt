@@ -1,4 +1,4 @@
-package ru.landgrafhomyak.utility.collections
+package ru.landgrafhomyak.collections
 
 import kotlin.contracts.ExperimentalContracts
 import kotlin.contracts.InvocationKind
